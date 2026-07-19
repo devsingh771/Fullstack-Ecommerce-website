@@ -44,8 +44,9 @@ export default function SearchProduct() {
     setIsLoaderOpen(false);
   };
 
-  
-  // console.log("location - ", colorValue, sizeValue,price,disccount);
+  const decodedQueryString = decodeURIComponent(location.search);
+  const searchParams = new URLSearchParams(decodedQueryString);
+  const sortValue = searchParams.get("sort");
 
   const handleSortChange = (value) => {
     const searchParams = new URLSearchParams(location.search);
@@ -53,12 +54,23 @@ export default function SearchProduct() {
     const query = searchParams.toString();
     navigate({ search: `?${query}` });
   };
+
   const handlePaginationChange = (event, value) => {
     const searchParams = new URLSearchParams(location.search);
     searchParams.set("page", value);
     const query = searchParams.toString();
     navigate({ search: `?${query}` });
   };
+
+  const sortedProducts = [...(customersProduct?.searchProducts || [])].sort((a, b) => {
+    if (sortValue === "price_low") {
+      return a.discountedPrice - b.discountedPrice;
+    }
+    if (sortValue === "price_high") {
+      return b.discountedPrice - a.discountedPrice;
+    }
+    return 0;
+  });
 
   useEffect(() => {
     
@@ -289,7 +301,7 @@ export default function SearchProduct() {
                       onChange={handleSearch}
                     />
                   <div className="flex flex-wrap justify-center bg-white py-5 rounded-md ">
-                    {customersProduct?.searchProducts?.map((item) => (
+                    {sortedProducts?.map((item) => (
                       <ProductCard product={item} />
                     ))}
                   </div>

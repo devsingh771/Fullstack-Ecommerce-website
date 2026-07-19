@@ -23,6 +23,13 @@ import {
   findProducts,
 } from "../../../../Redux/Customers/Product/Action";
 import { Backdrop, CircularProgress } from "@mui/material";
+import mens_kurta from "../../../../Data/Men/mensKurta.json";
+import mensShoesPage1 from "../../../../Data/shoes.json";
+import { lengha_page1 } from "../../../../Data/Women/LenghaCholi";
+import sareePage1 from "../../../../Data/saree.json";
+import { dressPage1 } from "../../../../Data/dress/page1";
+import gounsPage1 from "../../../../Data/gouns.json";
+import kurtaPage1 from "../../../../Data/women_kurta.json";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -38,6 +45,27 @@ export default function Product() {
   const location = useLocation();
   const [isLoaderOpen, setIsLoaderOpen] = useState(false);
 
+  const allMockData = {
+    mens_kurta: mens_kurta,
+    mens_shoes: mensShoesPage1,
+    shoes: mensShoesPage1,
+    lengha_choli: lengha_page1,
+    saree: sareePage1,
+    women_dress: dressPage1,
+    gouns: gounsPage1,
+    kurtas: kurtaPage1
+  };
+
+  const localCategoryProducts = allMockData[param.lavelThree] || [];
+
+  const productsList = customersProduct?.products?.content 
+    ? customersProduct.products.content 
+    : localCategoryProducts;
+
+  const totalPages = customersProduct?.products?.content 
+    ? customersProduct.products.totalPages 
+    : Math.ceil(localCategoryProducts.length / 10);
+
   const handleLoderClose = () => {
     setIsLoaderOpen(false);
   };
@@ -52,6 +80,7 @@ export default function Product() {
   const sortValue = searchParams.get("sort");
   const pageNumber = searchParams.get("page") || 1;
   const stock = searchParams.get("stock");
+  const isFilterApplied = colorValue || sizeValue || price || disccount || stock;
 
   // console.log("location - ", colorValue, sizeValue,price,disccount);
 
@@ -227,7 +256,13 @@ export default function Product() {
                                       name={`${section.id}[]`}
                                       defaultValue={option.value}
                                       type="checkbox"
-                                      defaultChecked={option.checked}
+                                      checked={
+                                        section.id === "color"
+                                          ? colorValue?.split(",").includes(option.value) || false
+                                          : section.id === "size"
+                                          ? sizeValue?.split(",").includes(option.value) || false
+                                          : false
+                                      }
                                       className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                       onChange={() =>
                                         handleFilter(option.value, section.id)
@@ -376,7 +411,13 @@ export default function Product() {
                                     name={`${section.id}[]`}
                                     defaultValue={option.value}
                                     type="checkbox"
-                                    defaultChecked={option.checked}
+                                    checked={
+                                      section.id === "color"
+                                        ? colorValue?.split(",").includes(option.value) || false
+                                        : section.id === "size"
+                                        ? sizeValue?.split(",").includes(option.value) || false
+                                        : false
+                                    }
                                     className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                     onChange={() =>
                                       handleFilter(option.value, section.id)
@@ -429,7 +470,15 @@ export default function Product() {
                             <FormControl>
                               <RadioGroup
                                 aria-labelledby="demo-radio-buttons-group-label"
-                                defaultValue="female"
+                                value={
+                                  section.id === "price"
+                                    ? price || ""
+                                    : section.id === "disccout"
+                                    ? disccount || ""
+                                    : section.id === "stock"
+                                    ? stock || ""
+                                    : ""
+                                }
                                 name="radio-buttons-group"
                               >
                                 {section.options.map((option, optionIdx) => (
@@ -454,9 +503,29 @@ export default function Product() {
                 {/* Product grid */}
                 <div className="lg:col-span-4 w-full ">
                   <div className="flex flex-wrap justify-center bg-white border py-5 rounded-md ">
-                    {customersProduct?.products?.content?.map((item) => (
-                      <ProductCard product={item} />
-                    ))}
+                    {productsList?.length === 0 ? (
+                      <div className="flex flex-col items-center justify-center py-20 px-4 text-center w-full">
+                        <div className="bg-indigo-50 text-indigo-600 p-4 rounded-full mb-4">
+                          <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                          </svg>
+                        </div>
+                        <h3 className={`text-2xl font-bold text-gray-900 mb-2 ${isFilterApplied ? "capitalize" : ""}`}>
+                          {isFilterApplied 
+                            ? "No product available" 
+                            : `${param.lavelThree?.replace(/_/g, ' ') || 'Category'} will be coming soon!`}
+                        </h3>
+                        <p className="text-gray-500 max-w-md">
+                          {isFilterApplied 
+                            ? "Try clearing some filters or adjusting your range to find what you are looking for." 
+                            : "We are currently stocking new arrivals for this category. Check back soon for exciting updates!"}
+                        </p>
+                      </div>
+                    ) : (
+                      productsList?.map((item) => (
+                        <ProductCard product={item} />
+                      ))
+                    )}
                   </div>
                 </div>
               </div>
@@ -468,7 +537,7 @@ export default function Product() {
         <section className="w-full px-[3.6rem]">
           <div className="mx-auto px-4 py-5 flex justify-center shadow-lg border rounded-md">
             <Pagination
-              count={customersProduct.products?.totalPages}
+              count={totalPages}
               color="primary"
               className=""
               onChange={handlePaginationChange}

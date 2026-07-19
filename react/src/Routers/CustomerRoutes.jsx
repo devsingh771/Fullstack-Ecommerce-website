@@ -29,35 +29,36 @@ const CustomerRoutes = () => {
 
     // const path=["/","/home","/about","/privacy-policy","/terms-condition","/contact","/men",`/product/${productId}`]
   return (
-    <div>
-    {/* Context Provider: ThemeProvider is a context provider that supplies a theme to its child components. This theme can include various styling properties like colors, fonts, spacing, and more. */}
-    {/* Consistent Styling: By wrapping your components with ThemeProvider, you ensure that the components inside it have access to the theme variables and can use them for styling. */}
-    <ThemeProvider theme={customerTheme}>
-    {showNavigation && <Navigation />}
-     <Routes>
-     <Route path="/login" element={<Homepage />}></Route>
-     <Route path="/register" element={<Homepage />}></Route>
+    <div className="flex flex-col min-h-screen">
+      {/* Context Provider: ThemeProvider is a context provider that supplies a theme to its child components. This theme can include various styling properties like colors, fonts, spacing, and more. */}
+      {/* Consistent Styling: By wrapping your components with ThemeProvider, you ensure that the components inside it have access to the theme variables and can use them for styling. */}
+      <ThemeProvider theme={customerTheme}>
+        {showNavigation && <Navigation />}
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/login" element={<Homepage />}></Route>
+            <Route path="/register" element={<Homepage />}></Route>
 
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/products/search" element={<SearchProduct/>}></Route>
-        <Route path="/home" element={<Homepage />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/privaciy-policy" element={<PrivacyPolicy />}></Route>
-        <Route path="/terms-condition" element={<TearmsCondition />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/:lavelOne/:lavelTwo/:lavelThree" element={<Product />}></Route>
-        <Route path="/product/:productId" element={<ProductDetails />}></Route>
-        <Route path="/cart" element={<Cart />}></Route>
-        <Route path="/account/order" element={<Order />}></Route>
-        <Route path="/account/order/:orderId" element={<OrderDetails />}></Route>
-        <Route path="/account/rate/:productId" element={<RateProduct />}></Route>
-        <Route path="/checkout" element={<Checkout />}></Route>
-        <Route path="/payment/:orderId" element={<PaymentSuccess />}></Route>
-        {/* <Route path="*" element={<NotFound />} /> */}
-      </Routes>
-      <Footer/>
-    </ThemeProvider>
-      
+            <Route path="/" element={<Homepage />}></Route>
+            <Route path="/products/search" element={<SearchProduct/>}></Route>
+            <Route path="/home" element={<Homepage />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/privaciy-policy" element={<PrivacyPolicy />}></Route>
+            <Route path="/terms-condition" element={<TearmsCondition />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/:lavelOne/:lavelTwo/:lavelThree" element={<Product />}></Route>
+            <Route path="/product/:productId" element={<ProductDetails />}></Route>
+            <Route path="/cart" element={<Cart />}></Route>
+            <Route path="/account/order" element={<Order />}></Route>
+            <Route path="/account/order/:orderId" element={<OrderDetails />}></Route>
+            <Route path="/account/rate/:productId" element={<RateProduct />}></Route>
+            <Route path="/checkout" element={<Checkout />}></Route>
+            <Route path="/payment/:orderId" element={<PaymentSuccess />}></Route>
+            {/* <Route path="*" element={<NotFound />} /> */}
+          </Routes>
+        </div>
+        <Footer/>
+      </ThemeProvider>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import AddressCard from "../adreess/AdreessCard";
 import { deepPurple } from "@mui/material/colors";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getOrderById } from "../../../Redux/Customers/Order/Action";
+import { getOrderById, cancelOrder } from "../../../Redux/Customers/Order/Action";
 
 const OrderDetails = () => {
   const dispatch = useDispatch();
@@ -19,9 +19,21 @@ const OrderDetails = () => {
 
   useEffect(() => {
     dispatch(getOrderById(orderId));
-  }, []);
+  }, [orderId]);
 
   const navigate = useNavigate();
+
+  const handleCancelOrder = () => {
+    if (orderId) {
+      dispatch(cancelOrder(orderId))
+        .then(() => {
+          navigate("/account/order");
+        })
+        .catch((err) => {
+          console.error("Failed to cancel order:", err);
+        });
+    }
+  };
   return (
     <div className=" px-2 lg:px-36 space-y-7 ">
       <Grid container className="p-3 shadow-lg">
@@ -55,9 +67,15 @@ const OrderDetails = () => {
               RETURN
             </Button>}
 
-            {order.order?.orderStatus!=="DELIVERED" && <Button sx={{ color: deepPurple[500] }} variant="text">
-              cancel order
-            </Button>}
+             {order.order?.orderStatus!=="DELIVERED" && order.order?.orderStatus!=="CANCELLED" && (
+               <Button 
+                 sx={{ color: deepPurple[500] }} 
+                 variant="text"
+                 onClick={handleCancelOrder}
+               >
+                 cancel order
+               </Button>
+             )}
           </Grid>
         </Grid>
       </Box>

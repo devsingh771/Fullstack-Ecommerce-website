@@ -9,7 +9,7 @@ const OrderCard = ({ item, order }) => {
   const navigate = useNavigate();
   console.log("items ", item,order,order.orderStatus);
   return (
-    <Box className="p-5 shadow-lg hover:shadow-2xl border ">
+    <Box className="p-5 hover:bg-gray-50/80 transition-all duration-200">
       <Grid spacing={2} container sx={{ justifyContent: "space-between" }}>
         <Grid item xs={6}>
           <div

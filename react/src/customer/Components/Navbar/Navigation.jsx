@@ -165,11 +165,8 @@ export default function Navigation() {
                                   className="absolute inset-0 z-10"
                                   aria-hidden="true"
                                 />
-                                {item.name}
+                                {item.name === "New Arrivals" || item.name === "Artwork Tees" || item.name === "Basic Tees" ? "Coming Soon" : item.name}
                               </a>
-                              <p aria-hidden="true" className="mt-1">
-                                Shop now
-                              </p>
                             </div>
                           ))}
                         </div>
@@ -267,8 +264,8 @@ export default function Navigation() {
                 <Link to="/">
                   <span className="sr-only">Your Company</span>
                   <img
-                    src="https://res.cloudinary.com/ddkso1wxi/image/upload/v1675919455/Logo/Copy_of_Zosh_Academy_nblljp.png"
-                    alt="Shopwithzosh"
+                    src="https://t3.ftcdn.net/jpg/02/98/18/60/360_F_298186090_Rimyxol4jsYvYbQg1i6sttQ5N3oebXgt.jpg"
+                    alt="ShopwithPassion"
                     className="h-8 w-8 mr-2"
                   />
                 </Link>
@@ -334,14 +331,8 @@ export default function Navigation() {
                                               className="absolute inset-0 z-10"
                                               aria-hidden="true"
                                             />
-                                            {item.name}
+                                            {item.name === "New Arrivals" || item.name === "Artwork Tees" || item.name === "Basic Tees" ? "Coming Soon" : item.name}
                                           </a>
-                                          <p
-                                            aria-hidden="true"
-                                            className="mt-1"
-                                          >
-                                            Shop now
-                                          </p>
                                         </div>
                                       ))}
                                     </div>
@@ -463,15 +454,18 @@ export default function Navigation() {
 
                 {/* Search */}
                 <div className="flex items-center lg:ml-6">
-                
-                  <p onClick={()=>navigate("/products/search")} className="p-2 text-gray-400 hover:text-gray-500">
+                  <button
+                    type="button"
+                    onClick={() => navigate("/products/search")}
+                    className="p-2 text-gray-400 hover:text-gray-500 cursor-pointer"
+                    style={{ background: 'none', border: 'none', outline: 'none' }}
+                  >
                     <span className="sr-only">Search</span>
-                    
                     <MagnifyingGlassIcon
                       className="h-6 w-6"
                       aria-hidden="true"
                     />
-                  </p>
+                  </button>
                 </div>
 
                 {/* Cart */}

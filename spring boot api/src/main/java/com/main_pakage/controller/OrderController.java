@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -59,6 +60,20 @@ public class OrderController {
 		User user=userService.findUserProfileByJwt(jwt);
 		Order orders=orderService.findOrderById(orderId);
 		return new ResponseEntity<>(orders,HttpStatus.ACCEPTED);
+	}
+
+	@PutMapping("/{orderId}/placed")
+	public ResponseEntity<Order> placedOrderHandler(@PathVariable Long orderId,
+			@RequestHeader("Authorization") String jwt) throws OrderException{
+		Order order = orderService.placedOrder(orderId);
+		return new ResponseEntity<>(order, HttpStatus.ACCEPTED);
+	}
+
+	@PutMapping("/{orderId}/cancel")
+	public ResponseEntity<Order> cancelOrderHandler(@PathVariable Long orderId,
+			@RequestHeader("Authorization") String jwt) throws OrderException{
+		Order order = orderService.cancledOrder(orderId);
+		return new ResponseEntity<>(order, HttpStatus.ACCEPTED);
 	}
 
 }

@@ -10,7 +10,7 @@ const HomeCarousel = () => {
   const navigate = useNavigate();
   const item = homeCarouselData.map((item) => (
     <img
-      className="cursor-pointer rounded-md"
+      className="cursor-pointer w-full object-cover object-top h-[20rem] md:h-[30rem] lg:h-[35rem] xl:h-[40rem] rounded-md"
       onClick={() => navigate(item.path)}
       src={item.image}
       alt=""
@@ -19,14 +19,16 @@ const HomeCarousel = () => {
     />
   ));
   return (
-    <AliceCarousel
-      mouseTracking
-      items={item}
-      autoPlay
-      infinite
-      autoPlayInterval={2000}
-      disableButtonsControls
-    />
+    <div className="px-4 sm:px-6 lg:px-8">
+      <AliceCarousel
+        mouseTracking
+        items={item}
+        autoPlay
+        infinite
+        autoPlayInterval={2000}
+        disableButtonsControls
+      />
+    </div>
   );
 };
 

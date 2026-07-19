@@ -1,18 +1,17 @@
-// The reducer handles state transitions based on the actions dispatched. It takes the current state and an action as arguments and returns a new state.import {
-  import {
-    ADD_ITEM_TO_CART_FAILURE,
-    ADD_ITEM_TO_CART_REQUEST,
-    ADD_ITEM_TO_CART_SUCCESS,
-    GET_CART_FAILURE,
-    GET_CART_REQUEST,
-    GET_CART_SUCCESS,
-    REMOVE_CART_ITEM_FAILURE,
-    REMOVE_CART_ITEM_REQUEST,
-    REMOVE_CART_ITEM_SUCCESS,
-    UPDATE_CART_ITEM_FAILURE,
-    UPDATE_CART_ITEM_REQUEST,
-    UPDATE_CART_ITEM_SUCCESS,
-  } from "./ActionType";
+import {
+  ADD_ITEM_TO_CART_FAILURE,
+  ADD_ITEM_TO_CART_REQUEST,
+  ADD_ITEM_TO_CART_SUCCESS,
+  GET_CART_FAILURE,
+  GET_CART_REQUEST,
+  GET_CART_SUCCESS,
+  REMOVE_CART_ITEM_FAILURE,
+  REMOVE_CART_ITEM_REQUEST,
+  REMOVE_CART_ITEM_SUCCESS,
+  UPDATE_CART_ITEM_FAILURE,
+  UPDATE_CART_ITEM_REQUEST,
+  UPDATE_CART_ITEM_SUCCESS,
+} from "./ActionType";
   
 
   // Concept: The initial state is the default state of the Redux store when the application first loads. It defines the shape and initial values of the state. Here, we have:
@@ -36,14 +35,17 @@ const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ITEM_TO_CART_REQUEST:
       return { ...state, loading: true, error: null };
-    case ADD_ITEM_TO_CART_SUCCESS:
+    case ADD_ITEM_TO_CART_SUCCESS: {
+      const newItem = action.payload;
+      const filteredItems = state.cartItems.filter(
+        (item) => item.id !== newItem.id && !(item.product?.id === newItem.product?.id && item.size === newItem.size)
+      );
       return {
         ...state,
-        cartItems: [...state.cartItems, action.payload.cartItems],
+        cartItems: [newItem, ...filteredItems],
         loading: false,
-        // state.cartItems: This is the current array of items in the cart.
-// action.payload.cartItems: This is the new item (or items) that was added to the cart. It comes from the action payload, which typically contains the result of the API call.
       };
+    }
       // Purpose: The purpose of this case is to update the Redux store with the new state of the cart after an item has been successfully added. It ensures that the cartItems array is updated with the newly added item and the loading state is correctly reset.
       // User Interface: Once this state is updated, any components connected to this part of the Redux store will receive the updated cartItems and loading state. This allows the UI to reflect the new state of the cart, such as displaying the newly added item in the cart list and hiding the loading spinner.
       case ADD_ITEM_TO_CART_FAILURE:
@@ -56,7 +58,7 @@ const cartReducer = (state = initialState, action) => {
     case GET_CART_SUCCESS:
       return {
         ...state,
-        cartItems: action.payload.cartItems,
+        cartItems: [...(action.payload.cartItems || [])].sort((a, b) => b.id - a.id),
         cart:action.payload,
         loading: false,
       };

@@ -101,3 +101,25 @@ export const getOrderHistory = (reqData) => async (dispatch, getState) => {
     });
   }
 };
+
+export const placeOrder = (orderId) => async (dispatch) => {
+  try {
+    const { data } = await api.put(`/api/orders/${orderId}/placed`);
+    console.log("placed order ", data);
+    return data;
+  } catch (error) {
+    console.log("place order error ", error);
+    throw error;
+  }
+};
+
+export const cancelOrder = (orderId) => async (dispatch) => {
+  try {
+    const { data } = await api.put(`/api/orders/${orderId}/cancel`);
+    console.log("cancelled order ", data);
+    return data;
+  } catch (error) {
+    console.log("cancel order error ", error);
+    throw error;
+  }
+};

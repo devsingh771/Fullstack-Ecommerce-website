@@ -2,12 +2,12 @@ import React from "react";
 import HomeCarousel from "../customer/Components/Carousel/HomeCarousel";
 import { homeCarouselData } from "../customer/Components/Carousel/HomeCaroselData";
 import HomeProductSection from "../customer/Components/Home/HomeProductSection";
-import { sareePage1 } from "../Data/Saree/page1";
+import sareePage1 from "../Data/saree.json";
 import { dressPage1 } from "../Data/dress/page1";
-import { gounsPage1 } from "../Data/Gouns/gouns";
-import { kurtaPage1 } from "../Data/Kurta/kurta";
-import { mensShoesPage1 } from "../Data/shoes";
-import { mens_kurta } from "../Data/Men/men_kurta";
+import gounsPage1 from "../Data/gouns.json";
+import kurtaPage1 from "../Data/women_kurta.json";
+import mensShoesPage1 from "../Data/shoes.json";
+import mens_kurta from "../Data/Men/mensKurta.json";
 import { lengha_page1 } from "../Data/Women/LenghaCholi";
 
 const Homepage = () => {

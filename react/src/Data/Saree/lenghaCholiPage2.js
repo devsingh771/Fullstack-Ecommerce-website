@@ -1,7 +1,7 @@
 export const lehngacholiPage2=[
   {
     image:
-      "https://rukminim1.flixcart.com/image/612/612/xif0q/lehenga-choli/y/g/m/l-sleeveless-shset95222-shae-by-sassafras-original-imaggjzkwyyyezzg.jpeg?q=70",
+      "https://img.faballey.com/images/Product/XLH60756Z/d4.jpg",
     brand: "Shae by SASSAFRAS",
     title: "Printed Stitched Lehenga Choli",
     color: "Grey",

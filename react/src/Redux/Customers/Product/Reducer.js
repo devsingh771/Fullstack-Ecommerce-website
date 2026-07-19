@@ -36,11 +36,11 @@ const customerProductReducer = (state = initialState, action) => {
     case FIND_PRODUCTS_BY_CATEGORY_FAILURE:
       return { ...state, loading: false, products:[], error: action.payload };
     case FIND_PRODUCT_BY_ID_REQUEST:
-      return { ...state, loading: true, error: null };
+      return { ...state, loading: true, error: null, product: null };
     case FIND_PRODUCT_BY_ID_SUCCESS:
       return { ...state, product: action.payload, loading: false };
     case FIND_PRODUCT_BY_ID_FAILURE:
-      return { ...state, loading: false, error: action.payload };
+      return { ...state, loading: false, error: action.payload, product: null };
       case CREATE_PRODUCT_REQUEST:
         return {
           ...state,

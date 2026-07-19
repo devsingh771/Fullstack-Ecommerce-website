@@ -1,7 +1,8 @@
 export const lengha_page1 = [
   {
+    "id": 174,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/u/g/a/free-half-sleeve-vbnd-fddj-astonblue-original-imagp286bmcaabbj.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.8_oQ4me8oWQEFa8kxFoBjwHaJQ?w=203&h=254&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "AstonBlue",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Yellow",
@@ -29,6 +30,7 @@ export const lengha_page1 = [
       "thirdLavelCategory": "lengha_choli",
   },
   {
+    "id": 3000,
     "imageUrl":
       "https://rukminim1.flixcart.com/imageUrl/612/612/kmz7qfk0/lehenga-choli/m/0/t/s-sleeveless-l032-rayie-collection-original-imagfrbqhvddrnbd.jpeg?q=70",
     "brand": "rayie collection",
@@ -55,8 +57,9 @@ export const lengha_page1 = [
     "Yellow Readymade Lehenga in Net fabric  The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupattaComes with the Koskii promise of premium quality",
   },
   {
+    "id": 176,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/5/n/h/l-3-4-sleeve-black-liva-original-imagmeyw2zzbch2g.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.7cXiOUrDbkZKl8ht5IuV_gHaKL?w=203&h=279&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Liva",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Black",
@@ -80,8 +83,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 182,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/b/h/z/xl-sleeveless-owa2cd2320a-soch-original-imagjvmyhy63ms7z.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.5P9xv1Xn9g0Yb5xeKtidIQHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "soch",
    "title": "Embellished Stitched Lehenga Choli",
     "color": "Yellow",
@@ -104,8 +108,9 @@ export const lengha_page1 = [
     "discountPersent": "",
   },
   {
+    "id": 177,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/y/d/8/l-3-4-sleeve-green-liva-original-imagmez3duzyzzxz.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.Qw_PO8ROIBBFmCxYq7Cw5AHaKL?w=203&h=279&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Liva",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Green",
@@ -129,8 +134,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 184,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/j/b/g/xl-sleeveless-owa2cd2319a-soch-original-imagjvmysh3z9egk.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.RtEpTzWZ8d9DIGuC59L8mgHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "soch",
    "title": "Solid Stitched Lehenga Choli",
     "color": "Dark Blue",
@@ -154,8 +160,9 @@ export const lengha_page1 = [
   },
  
 {
+    "id": 178,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/l16rde80/lehenga-choli/h/r/t/free-3-4-sleeve-r1-5-aminia-original-imagct7ghhpgrm48.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.HkkoJ_PgWAB6gpqcVj4dKQHaLH?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "AMINIA",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
@@ -179,8 +186,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 179,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/r/8/u/free-half-sleeve-mjo4061-mjo-fashion-original-imagmyk9yxpykc7j.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.dJRjws07OQlpHJeU1q6tQgHaLG?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "mjo fashion",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
@@ -204,8 +212,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 180,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/3/d/1/l-half-sleeve-na-lh-mamta-fashion-hub-original-imagz6fhx79zcy7g.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.rjvSVp-U7qKMaEqWb4d_twHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "rashora",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Gold, Orange",
@@ -229,8 +238,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 181,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/sari/j/f/n/free-verveecouture-vv-126-vervee-couture-unstitched-original-imagnhgjmgrth4xr.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.E6iXZkKnFx1WzIBV4uljrAHaIM?w=203&h=224&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Vervee Couture",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Blue",
@@ -254,8 +264,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 203,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/z/c/c/free-short-sleeve-sochncugc5604-soch-original-imaghy7nebe4jzhn.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.sv8Q8cRplXuA5ZSma_PELwHaLH?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "soch",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
@@ -279,8 +290,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 183,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/m/d/c/free-short-sleeve-women-satin-red-lehenga-choli-set-for-wedding-original-imagn8kzjrfakvsu.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.OMiRTsZY9z4lc7lOjBWE5gHaKX?w=203&h=284&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "kajtosh",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Red",
@@ -304,8 +316,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 182,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/3/c/l/m-sleeveless-owa2cd2127a-soch-original-imagg4543hg6dmjs.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.5P9xv1Xn9g0Yb5xeKtidIQHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "soch",
    "title": "Embroidered Stitched Lehenga Choli",
     "color": "Green",
@@ -329,8 +342,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 185,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/f/w/r/m-short-sleeve-35072-libas-original-imaghqz3fu82bd8x.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.9yP0MX7_E3FvXJvhVWJnCAHaLG?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "LIBAS",
    "title": "Solid Stitched Lehenga Choli",
     "color": "Green",
@@ -354,8 +368,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 186,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/3/a/w/l-3-4-sleeve-heavy-lehenga-with-blouse-and-dupatta-perhaps-original-imaggzgehtruqhhc.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.UhsTVVh5IWDwQFu3aMzIzAHaJ2?w=203&h=271&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "PERHAPS",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Black, Grey",
@@ -379,8 +394,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 187,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/b/g/a/xl-half-sleeve-heavy-work-lehenga-choli-with-dupatta-perhaps-original-imagjbjeavb5hvag.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.bYpJjDd724AR39tJnQeugQAAAA?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "PERHAPS",
    "title": "Embroidered, Embellished Stitched Lehenga Choli",
     "color": "Multicolor",
@@ -404,8 +420,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 188,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/i/5/p/free-half-sleeve-1fvv-lc-3042-sky-blue-fabviva-original-imagkcazapqjnjzj.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.erSqWR8n07aUgEBjAW--bQHaNK?w=187&h=333&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Bhavyam",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Light Blue",
@@ -429,8 +446,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 189,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/x/9/u/xxl-sleeveless-madhu-niza-fashion-original-imagmhv56qruwscu.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.-Nr8TNKjpZvR8bmSq7896AHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Shivanya Fashion",
    "title": "Embellished Stitched Lehenga Choli",
     "color": "Purple",
@@ -454,8 +472,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 190,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/l5ld8y80/lehenga-choli/y/x/2/free-half-sleeve-br-lc-3042-sky-blue-blousary-original-imagg8e76vzjkfrz.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.mGPUAfTKhCiPF74y6VEYUAHaLH?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Bhavyam",
    "title": "Embroidered, Self Design Semi Stitched Lehenga Choli",
     "color": "Light Blue, Multicolor",
@@ -479,8 +498,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 191,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/v/o/q/free-half-sleeve-1fvv-lc-3042-peach-fabviva-original-imagkcadgmfdp9vu.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.e-fxEqeYelTtUv4NrCLfFAHaLH?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "VAMSE",
    "title": "Embellished Semi Stitched Lehenga Choli",
     "color": "Pink",
@@ -504,8 +524,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 192,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/1/c/n/free-3-4-sleeve-2lehnga06-abcd-original-imagzvnna4jhfywz.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.-RHgvPnIkgFp9j7UvJybwQHaKL?w=203&h=279&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "ABCD",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Multicolor",
@@ -529,8 +550,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 193,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/v/e/g/free-short-sleeve-kajal-niza-fashion-original-imagnrhz6faqfhgr.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.XP__2VpuIOBBQeqGCEwfSQHaJd?w=203&h=259&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Shivanya Fashion",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Green",
@@ -554,8 +576,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 194,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/l3j2cnk0/lehenga-choli/x/d/x/free-half-sleeve-1ad-lc-3003-adbhutam-original-imageUrlmr2hhgktgcr.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.8vPOzj-HNESaGDGxwEuDAgAAAA?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Bhavyam",
    "title": "Embroidered, Self Design Semi Stitched Lehenga Choli",
     "color": "Blue",
@@ -579,8 +602,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 195,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/m/f/v/free-half-sleeve-1fvv-lc-3003-fabviva-original-imagkb5hsadb4gc3.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.aUBzXEoHn4l-TbbOxRFzWAHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Bhavyam",
    "title": "Embroidered, Self Design Semi Stitched Lehenga Choli",
     "color": "Blue",
@@ -604,8 +628,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 196,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/6/y/y/free-na-ha2301-hathka-original-imagzxzswr7kaerv.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.kOQbSlRqKbVvka_wqFXYBwHaLH?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Hathka",
    "title": "Self Design Semi Stitched Rajasthani Poshak",
     "color": "Purple, Yellow",
@@ -629,8 +654,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 197,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/shopsy-lehenga-choli/n/9/m/free-full-sleeve-semi-stitched-46-s0426wd-navy-blue-lehenga-original-imagkzfgszuewujf.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.A2L_nrF8ZsSPxiro0SovHgHaKL?w=203&h=279&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "CAMPAIGN TRENDS",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Blue",
@@ -654,8 +680,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 198,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/a/9/5/xxl-sleeveless-xxl-kiya-original-imaggjn8f6raargz.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.wLPBDK7AgcfSTeizBXcOVQAAAA?w=203&h=300&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "KIYA",
    "title": "Embellished Stitched Lehenga Choli",
     "color": "Black",
@@ -679,8 +706,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 199,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/k/i/p/free-na-paithani-lehenga-choli-geetanjali-original-imagp32udetp8kek.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.Q-_-rvoaXF5qrSEOCXRggwHaLH?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Geetanjali",
    "title": "Embellished Semi Stitched Lehenga Choli",
     "color": "Yellow",
@@ -704,8 +732,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 200,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/e/j/0/free-half-sleeve-na-d-no-810-r-rajshree-fashion-fab-original-imagzymbh7qz48y4.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.hl-wVTcu1R5CKMpFZzeFgwHaJQ?w=203&h=254&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Rajshree Fashion Fab",
    "title": "Embroidered, Embellished Semi Stitched Lehenga Choli",
     "color": "Red",
@@ -729,8 +758,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 201,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/t/9/m/free-na-paithani-lehenga-choli-geetanjali-original-imagp33yscpevubp.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.poyUIWmKQ0HmTlaPIQgH8wHaKL?w=203&h=279&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Geetanjali",
    "title": "Embellished Semi Stitched Lehenga Choli",
     "color": "Orange",
@@ -754,8 +784,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 202,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/o/9/i/4xl-short-sleeve-dk0819-divena-original-imagjwp9mh2urcqg.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.pdGUZEaEy84Ervaa5oA4PgHaKL?w=203&h=279&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "DIVENA",
    "title": "Printed Stitched Lehenga Choli",
     "color": "Red",
@@ -779,8 +810,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 184,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/e/z/5/free-short-sleeve-sochncugc5600a-soch-original-imaghy7nkvuhrhvy.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.RtEpTzWZ8d9DIGuC59L8mgHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "soch",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Red",
@@ -804,8 +836,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 204,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/9/y/d/free-na-lnb1251nbl-looknbook-art-original-imaghu99pfzmrsgk.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.lWe-EPwk-R6lMUeNu7sSNgHaKt?w=203&h=294&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "LookNbook art",
    "title": "Printed Semi Stitched Lehenga Choli",
     "color": "Dark Blue",
@@ -829,8 +862,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 203,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/m/5/t/xl-short-sleeve-this-beautiful-embroidered-lehenga-choli-with-original-imagg9j7dncbkahu.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.sv8Q8cRplXuA5ZSma_PELwHaLH?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "FESTIVE SHOPEE",
    "title": "Embroidered, Embellished, Self Design Stitched Lehenga ...",
     "color": "Blue",
@@ -854,8 +888,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 206,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/shopsy-lehenga-choli/j/s/n/free-full-sleeve-semi-stitched-46-s0510gd-wine-lehenga-choli-original-imagkzdzvwgjwwuh.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.kudDA3YpIim9HLSpTruFLgHaQq?w=155&h=350&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "CAMPAIGN TRENDS",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Purple",
@@ -879,8 +914,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 206,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/km6mxe80/lehenga-choli/f/i/i/free-na-velvetqn4m-manvaa-original-imagf59gy7sbxmjs.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.kudDA3YpIim9HLSpTruFLgHaQq?w=155&h=350&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
@@ -904,8 +940,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 206,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/km6mxe80/lehenga-choli/v/w/d/free-na-velvetqn5m-manvaa-original-imagf59mqaxpe9yh.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.kudDA3YpIim9HLSpTruFLgHaQq?w=155&h=350&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
@@ -929,8 +966,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 209,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/km6mxe80/lehenga-choli/s/l/l/free-na-mrsvelvetqn6m-maroosh-original-imagf59z88g5g8mh.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.MK4RmiwoNgAn_v6FudYqKQAAAA?w=203&h=254&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
@@ -954,8 +992,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 209,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/km6mxe80/lehenga-choli/7/h/r/free-na-mrsvelvetqn3m-maroosh-original-imagf59hjfrgev7y.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.MK4RmiwoNgAn_v6FudYqKQAAAA?w=203&h=254&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Shadow & Saining",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Maroon",
@@ -979,8 +1018,9 @@ export const lengha_page1 = [
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
   },
   {
+    "id": 211,
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/m/i/a/free-na-ps-set-121-mode-connection-original-imagpf383nyhz8nh.jpeg?q=70",
+      "https://th.bing.com/th/id/OIP.0AUmMZSqFV2fnwEGvdIvVgAAAA?w=203&h=275&c=7&r=0&o=5&dpr=1.5&pid=1.7",
     "brand": "Love Purple",
    "title": "Embroidered Semi Stitched Lehenga Choli",
     "color": "Black",
@@ -1002,5 +1042,4 @@ export const lengha_page1 = [
     ],
     "discountPersent": "28% off",
     description:"The Lehenga is embellished with Mirrorwork embroidery Accompanied with an Readymade blouse and dupatta Comes with the Koskii promise of premium quality"
-  },
-];
+  }];

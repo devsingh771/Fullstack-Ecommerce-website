@@ -100,7 +100,15 @@ public class OrderServiceImplementation implements OrderService {
 		Order order=findOrderById(orderId);
 		order.setOrderStatus(OrderStatus.PLACED);
 		order.getPaymentDetails().setStatus(PaymentStatus.COMPLETED);
-		return order;
+		
+		// Clear user's cart
+		try {
+			cartService.clearCart(order.getUser().getId());
+		} catch (Exception e) {
+			System.out.println("Error clearing cart: " + e.getMessage());
+		}
+		
+		return orderRepository.save(order);
 	}
 
 	@Override
