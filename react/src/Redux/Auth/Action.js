@@ -92,6 +92,9 @@ export const getUser = (token) => {
     } catch (error) {
       const errorMessage = error.message;
       dispatch({ type: GET_USER_FAILURE, payload: errorMessage });
+      if (error.response && error.response.status === 401) {
+        dispatch(logout());
+      }
     }
   };
 };
