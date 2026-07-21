@@ -1,0 +1,241 @@
+# 🛒 Full Stack E-Commerce Website on AWS
+
+A production-style 3-tier e-commerce application deployed on AWS using React, Spring Boot, and MySQL.
+
+## 🌐 Live Demo
+
+**Frontend:** https://<your-cloudfront-url>
+
+**Backend:** http://<your-ec2-public-ip>:5454
+
+---
+
+# 📖 Project Overview
+
+This project demonstrates the deployment of a full-stack e-commerce application on AWS following a 3-tier architecture.
+
+The application consists of:
+
+- React Frontend
+- Spring Boot REST API
+- MySQL Database
+- AWS Cloud Infrastructure
+
+The frontend is hosted on Amazon S3 and delivered globally through Amazon CloudFront. The backend runs on an EC2 instance inside a custom VPC, while the database is hosted on Amazon RDS.
+
+---
+
+# 🏗 Architecture
+
+```
+                     User
+                       │
+                       ▼
+                CloudFront CDN
+                       │
+                       ▼
+            Amazon S3 (React App)
+                       │
+               HTTPS API Calls
+                       ▼
+          Amazon EC2 (Spring Boot)
+                       │
+                JDBC Connection
+                       ▼
+            Amazon RDS (MySQL)
+```
+
+---
+
+# ☁ AWS Services Used
+
+- Amazon EC2
+- Amazon RDS (MySQL)
+- Amazon S3
+- Amazon CloudFront
+- Amazon VPC
+- Internet Gateway
+- Route Tables
+- Security Groups
+- IAM
+- Amazon Machine Image (AMI)
+- RDS Snapshots
+
+---
+
+# 💻 Technology Stack
+
+## Frontend
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Axios
+
+## Backend
+
+- Spring Boot
+- Spring Security
+- JWT Authentication
+- Spring Data JPA
+- Hibernate
+
+## Database
+
+- MySQL
+
+## DevOps / Cloud
+
+- AWS EC2
+- AWS RDS
+- AWS S3
+- AWS CloudFront
+- AWS VPC
+- Git
+- GitHub
+
+---
+
+# 🚀 Features
+
+- User Registration
+- User Login
+- JWT Authentication
+- Product Listing
+- Product Categories
+- Shopping Cart
+- Order Management
+- Responsive UI
+- REST APIs
+- Secure Database Connectivity
+
+---
+
+# 🏗 AWS Infrastructure
+
+### Network
+
+- Custom VPC
+- Public Subnet
+- Private Subnet
+- Internet Gateway
+- Route Tables
+- Security Groups
+
+### Frontend
+
+- React Production Build
+- Hosted on Amazon S3
+- Delivered using CloudFront CDN
+
+### Backend
+
+- Spring Boot deployed on Amazon EC2
+- Java 17
+- systemd Service
+- Automatic Application Restart
+
+### Database
+
+- Amazon RDS MySQL
+- Private Subnet
+- Security Group Restricted to EC2
+
+---
+
+# 🔄 Deployment Workflow
+
+```
+Developer
+     │
+     ▼
+GitHub Repository
+     │
+Build React
+     │
+npm run build
+     │
+     ▼
+Upload to Amazon S3
+     │
+     ▼
+CloudFront
+     │
+     ▼
+Users
+
+
+Spring Boot
+
+Developer
+     │
+mvn clean package
+     │
+     ▼
+JAR File
+     │
+Upload to S3
+     │
+Download on EC2
+     │
+java -jar
+     ▼
+Spring Boot API
+```
+
+---
+
+# 💾 Backup Strategy
+
+- Amazon Machine Image (AMI) for EC2
+- Amazon RDS Manual Snapshot
+- GitHub Repository for Source Code
+
+---
+
+# 🔒 Security
+
+- Backend deployed inside a custom VPC
+- Database accessible only from EC2 Security Group
+- JWT Authentication
+- Security Groups configured with least privilege
+- Private RDS deployment
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+
+(Add Screenshot)
+
+---
+
+## Login Page
+
+(Add Screenshot)
+
+---
+
+## Product Listing
+
+(Add Screenshot)
+
+---
+
+## AWS Architecture
+
+(Add Screenshot)
+
+---
+
+# 👨‍💻 Author
+
+**Devi Singh**
+
+GitHub:
+https://github.com/<your-github>
+
+LinkedIn:
+https://linkedin.com/in/<your-linkedin>
