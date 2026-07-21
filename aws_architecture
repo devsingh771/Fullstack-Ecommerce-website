@@ -1,0 +1,86 @@
+                                     Internet
+                                         │
+                                         │
+                                  User Browser
+                                         │
+                                         ▼
+                              Amazon CloudFront
+                                         │
+                                         │
+                                         ▼
+                                Amazon S3 Bucket
+                              (React Frontend)
+                                         │
+                              HTTPS API Requests
+                                         │
+                                         ▼
+                    ┌────────────────────────────────┐
+                    │        Public Subnet           │
+                    │                                │
+                    │    Amazon EC2 (Spring Boot)    │
+                    │          Port 5454             │
+                    └────────────────────────────────┘
+                                         │
+                              JDBC (Port 3306)
+                                         │
+                                         ▼
+                    ┌────────────────────────────────┐
+                    │       Private Subnet           │
+                    │                                │
+                    │      Amazon RDS (MySQL)        │
+                    └────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+                              Internet
+                                  │
+                    ┌─────────────┴─────────────┐
+                    │                           │
+                    ▼                           ▼
+              CloudFront CDN               AWS Console
+                    │
+                    ▼
+               Amazon S3
+           (React Frontend)
+                    │
+                    ▼
+          Custom AWS VPC (10.0.0.0/16)
+────────────────────────────────────────────────────────
+
+        Public Subnet (10.0.1.0/24)
+
+        ┌──────────────────────────────┐
+        │ EC2 Instance                 │
+        │ Spring Boot                  │
+        │ Java 17                      │
+        │ systemd Service              │
+        └──────────────────────────────┘
+                    │
+             Security Group
+              Allow 3306 Only
+                    │
+
+────────────────────────────────────────────────────────
+
+       Private Subnet (10.0.2.0/24)
+
+        ┌──────────────────────────────┐
+        │ Amazon RDS                   │
+        │ MySQL                        │
+        └──────────────────────────────┘
+
+────────────────────────────────────────────────────────
+
+Internet Gateway
+Route Tables
+Security Groups
+AMI Backup
+RDS Snapshot
