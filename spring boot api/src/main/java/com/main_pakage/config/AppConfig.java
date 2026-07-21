@@ -44,7 +44,8 @@ public class AppConfig {
 								"http://localhost:4000",
 								"http://localhost:4200",
 								"https://shopwithzosh.vercel.app",
-								"https://ecommerce-angular-blue.vercel.app/"
+								"https://ecommerce-angular-blue.vercel.app/",
+								"http://ecommerce-frontend-450284742337-us-east-2-an.s3-website.us-east-2.amazonaws.com"
 								
 							)
 						);
