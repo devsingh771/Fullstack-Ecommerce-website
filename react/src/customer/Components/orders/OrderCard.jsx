@@ -11,18 +11,18 @@ const OrderCard = ({ item, order }) => {
   return (
     <Box className="p-5 hover:bg-gray-50/80 transition-all duration-200">
       <Grid spacing={2} container sx={{ justifyContent: "space-between" }}>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <div
             onClick={() => navigate(`/account/order/${order?.id}`)}
             className="flex cursor-pointer"
           >
             <img
-              className="w-[5rem] h-[5rem] object-cover object-top"
+              className="w-[5rem] h-[5rem] object-cover object-top rounded"
               src={item?.product.imageUrl}
               alt=""
             />
             <div className="ml-5">
-              <p className="mb-2">{item?.product.title}</p>
+              <p className="font-semibold text-gray-900">{item?.product.title}</p>
               <p className="opacity-50 text-xs font-semibold space-x-5">
                 <span>Size: {item?.size}</span>
               </p>
@@ -30,10 +30,10 @@ const OrderCard = ({ item, order }) => {
           </div>
         </Grid>
 
-        <Grid item xs={2}>
-          <p>₹{item?.price}</p>
+        <Grid item xs={6} md={2}>
+          <p className="font-bold text-gray-900">₹{item?.price}</p>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <p className="space-y-2 font-semibold">
             {order?.orderStatus === "DELIVERED"? (
              <>

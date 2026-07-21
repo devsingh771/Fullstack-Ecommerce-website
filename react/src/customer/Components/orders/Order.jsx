@@ -50,9 +50,9 @@ const Order = () => {
     .filter((orderItem) => matchesFilter(orderItem.orderStatus))
     .sort((a, b) => b.id - a.id);
   return (
-    <Box className="px-10">
-      <Grid container spacing={0} sx={{ justifyContent: "space-between" }}>
-        <Grid item xs={2.5} className="">
+    <Box className="px-4 sm:px-10">
+      <Grid container spacing={3} sx={{ justifyContent: "space-between" }}>
+        <Grid item xs={12} md={3.5} lg={3} className="">
           <div className="h-auto shadow-lg bg-white border p-5 sticky top-5">
             <h1 className="font-bold text-lg">Filters</h1>
             <div className="space-y-4 mt-10">
@@ -79,7 +79,7 @@ const Order = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={12} md={8} lg={8.5}>
           <Box className="space-y-5 ">
             {filteredOrders.length === 0 ? (
               <div className="flex flex-col items-center justify-center py-20 px-4 text-center bg-white border rounded-md shadow-sm">
@@ -100,7 +100,7 @@ const Order = () => {
                 <div key={orderItem.id} className="bg-white border rounded-xl shadow-sm overflow-hidden mb-6 hover:shadow-md transition-shadow duration-300">
                   {/* Order Section Header */}
                   <div className="bg-gray-50/70 border-b px-6 py-4 flex flex-wrap justify-between items-center gap-4">
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-wrap items-center gap-4 sm:gap-6">
                       <div>
                         <p className="text-[10px] text-gray-500 uppercase font-bold tracking-wider">Order Placed</p>
                         <p className="text-xs font-semibold text-gray-700 mt-0.5">

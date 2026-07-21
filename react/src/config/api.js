@@ -1,9 +1,6 @@
 
 import axios from 'axios';
-const LOCALHOST='http://localhost:5454'
-const EC2_DEPLOYED='http://3.15.142.102:5454'
-
-export const API_BASE_URL = EC2_DEPLOYED
+export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5454';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

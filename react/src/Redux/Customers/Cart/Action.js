@@ -42,19 +42,12 @@ export const addItemToCart = (reqData) => async (dispatch) => {
     );
     // const { data } = ...: This line uses destructuring assignment to extract the data property from the response object returned by axios.put. The data variable will contain the response data returned by the server.
 
-console.log("add item to cart ",data)
-
-// Dispatches an action to indicate that the item was successfully added to the cart, with the response data as the payload.
+    console.log("add item to cart ",data)
     dispatch({
       type:ADD_ITEM_TO_CART_SUCCESS,
-
-// dispatch is typically a function provided by Redux (or similar state management libraries) that is used to send actions to the store.
-// Actions are plain JavaScript objects that represent events or payloads of data that are sent to the store. They are the only source of information for the store
-// type is a mandatory property in Redux actions. It indicates the type of action being performed.
-// ADD_ITEM_TO_CART_SUCCESS is likely a constant (usually defined elsewhere in your code) that represents the action type dispatched when adding an item to the cart is successful. Action types are typically defined as strings, often stored in a central place to ensure consistency across the application.  
       payload: data,
-      // The payload property can contain any data that needs to be passed along with the action. It could be the new state, server response data, or any other relevant information
     });
+    dispatch(getCart(reqData.jwt));
   } catch (error) {
     dispatch({
       type: ADD_ITEM_TO_CART_FAILURE,
@@ -107,6 +100,7 @@ export const removeCartItem = (reqData) => async (dispatch) => {
         type: REMOVE_CART_ITEM_SUCCESS,
         payload: reqData.cartItemId,
       });
+      dispatch(getCart(reqData.jwt));
     } catch (error) {
       dispatch({
         type: REMOVE_CART_ITEM_FAILURE,
@@ -136,6 +130,7 @@ export const removeCartItem = (reqData) => async (dispatch) => {
         type: UPDATE_CART_ITEM_SUCCESS,
         payload: data,
       });
+      dispatch(getCart(reqData.jwt));
     } catch (error) {
       dispatch({
         type: UPDATE_CART_ITEM_FAILURE,

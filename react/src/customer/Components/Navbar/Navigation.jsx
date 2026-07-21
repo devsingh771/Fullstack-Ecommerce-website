@@ -51,6 +51,9 @@ export default function Navigation() {
   };
   const handleClose = () => {
     setOpenAuthModal(false);
+    if (location.pathname === "/login" || location.pathname === "/register") {
+      navigate(-1);
+    }
   };
 
   const handleCategoryClick = (category, section, item, close) => {
@@ -61,11 +64,15 @@ export default function Navigation() {
   useEffect(() => {
     if (auth.user) {
       handleClose();
+      if (location.pathname === "/login" || location.pathname === "/register") {
+        navigate(-1);
+      }
+    } else {
+      if (location.pathname === "/login" || location.pathname === "/register") {
+        setOpenAuthModal(true);
+      }
     }
-    if (location.pathname === "/login" || location.pathname === "/register") {
-      navigate(-1);
-    }
-  }, [auth.user]);
+  }, [auth.user, location.pathname]);
 
   const handleLogout = () => {
     handleCloseUserMenu();
@@ -186,8 +193,18 @@ export default function Navigation() {
                             >
                               {section.items.map((item) => (
                                 <li key={item.name} className="flow-root">
-                                  <p className="-m-2 block p-2 text-gray-500">
-                                    {"item.name"}
+                                  <p
+                                    onClick={() =>
+                                      handleCategoryClick(
+                                        category,
+                                        section,
+                                        item,
+                                        () => setOpen(false)
+                                      )
+                                    }
+                                    className="-m-2 block p-2 text-gray-500 cursor-pointer hover:text-indigo-600"
+                                  >
+                                    {item.name}
                                   </p>
                                 </li>
                               ))}
@@ -213,14 +230,59 @@ export default function Navigation() {
                 </div>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                  <div className="flow-root">
-                    <a
-                      href="/"
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                    >
-                      Sign in
-                    </a>
-                  </div>
+                  {auth.user ? (
+                    <div className="space-y-6">
+                      <div className="flex items-center space-x-3">
+                        <Avatar
+                          sx={{
+                            bgcolor: deepPurple[500],
+                            color: "white",
+                          }}
+                        >
+                          {auth.user?.firstName[0].toUpperCase()}
+                        </Avatar>
+                        <span className="font-medium text-gray-900">
+                          Hi, {auth.user?.firstName}
+                        </span>
+                      </div>
+                      <div className="flow-root">
+                        <span
+                          onClick={() => {
+                            setOpen(false);
+                            handleMyOrderClick();
+                          }}
+                          className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer hover:text-indigo-600"
+                        >
+                          {auth.user?.role === "ROLE_ADMIN"
+                            ? "Admin Dashboard"
+                            : "My Orders"}
+                        </span>
+                      </div>
+                      <div className="flow-root">
+                        <span
+                          onClick={() => {
+                            setOpen(false);
+                            handleLogout();
+                          }}
+                          className="-m-2 block p-2 font-medium text-red-600 cursor-pointer hover:text-red-800"
+                        >
+                          Logout
+                        </span>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flow-root">
+                      <span
+                        onClick={() => {
+                          setOpen(false);
+                          handleOpen();
+                        }}
+                        className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer hover:text-indigo-600"
+                      >
+                        Sign in
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="border-t border-gray-200 px-4 py-6">

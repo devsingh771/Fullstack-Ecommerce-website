@@ -100,7 +100,12 @@ export default function ProductDetails() {
     setActiveImage(image);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (event) => {
+    event?.preventDefault();
+    if (!jwt) {
+      navigate("/login");
+      return;
+    }
     if (!selectedSize) {
       alert("Please select a size first!");
       return;
@@ -353,7 +358,6 @@ export default function ProductDetails() {
                 <Button
                   variant="contained"
                   type="submit"
-                  disabled={!jwt}
                   sx={{ padding: ".8rem 2rem", marginTop: "2rem" }}
                 >
                   {jwt ? "Add To Cart" : "Sign In to Add to Cart"}
@@ -407,8 +411,8 @@ export default function ProductDetails() {
           </h1>
 
           <div className="border p-5">
-            <Grid container spacing={7}>
-              <Grid item xs={7}>
+            <Grid container spacing={4}>
+              <Grid item xs={12} md={7}>
                 <div className="space-y-5">
                   {productData?.reviews?.map((item, i) => (
                     <ProductReviewCard item={item} key={i} />
@@ -416,7 +420,7 @@ export default function ProductDetails() {
                 </div>
               </Grid>
 
-              <Grid item xs={5}>
+              <Grid item xs={12} md={5}>
                 <h1 className="text-xl font-semibold pb-1">Product Ratings</h1>
                 <div className="flex items-center space-x-3 pb-10">
                   <Rating
